@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+    background-color: #EEE3CB;
+    font-family: 'Lobster Two';
+}
+
+/* Site structure styling */
+
+.site-container {
+    display: grid;
+    row-gap: 4rem;
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #135488;
+    width: 80%;
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+
+/* Individual sections/categories*/
+.category {
+    display: flex;
+    flex-direction: column;
+}
+
+.category-name {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-left: 11rem;
+}
+
+.item-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: rem;
+}
+
+.item {
+    background-color: #D7C0AE;
+    height: 30rem;
+    width: 25rem;
+    border-radius: 1rem;
+}
