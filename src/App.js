@@ -1,33 +1,21 @@
 import './App.css'
+import Header from './components/Header'
+import Category from './components/Category'
+import Button from './components/Button'
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
+const api_key = process.env.REACT_APP_API_KEY;
 
 const App = () => {
+
   return ( 
     <div className='site-container'>
-      <div className='header-container'>
-        <h1 className='header'>**kwants</h1>
-      </div>
-      
+      <Header/>
 
-      <div className='category'>
-        <h2 className='category-name'>Clothes</h2>
-        <div className='item-carousel'>
-          <div className='item'></div>
-          <div className='item'></div>
-          <div className='item'></div>
-        </div>
-      </div>
+      <Category name='Clothes'/>
 
-      <div className='category'>
-        <h2 className='category-name'>Skincare</h2>
-        <div className='item-carousel'>
-          <div className='item'></div>
-          <div className='item'></div>
-          <div className='item'></div>
-        </div>
-      </div>
-
-      <button className=''>Add Wishlist</button>
-
+      <Button className='add-wish' name='Add Wishlist'/>
     </div>
   );
 }

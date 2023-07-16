@@ -1,0 +1,11 @@
+{
+  "clothes": [
+    {
+      "https://api.rainforestapi.com/request?api_key": "C00199159E8D45C1B52AE9BFBFC152DD",
+      "amazon_domain": "amazon.com",
+      "asin": "B000GAYQJ0",
+      "type": "product",
+      "id": 1
+    }
+  ]
+}

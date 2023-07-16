@@ -45,12 +45,57 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: rem;
 }
 
 .item {
     background-color: #D7C0AE;
     height: 30rem;
     width: 25rem;
+    border-radius: 2rem;
+}
+
+/* Wishlist button */
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.add-wish {
+    width: 25%;
+    padding: 1.5rem;
+    font-size: 1.75rem;
+    background-color: #967E76;
+    border-width: 0;
+}
+
+/* Form Styling*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.add-item {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    background-color: #967E76;
     border-radius: 1rem;
+    border-width: 0.1rem;
+}
+
+.item-field {
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+img {
+    width: 200px;
+}
+
+h3 {
+    width: 20%;
 }
