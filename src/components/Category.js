@@ -1,27 +1,24 @@
 import Item from './Item'
 import axios from 'axios'
 import { useState } from 'react';
-import { saveAs } from 'file-saver'
+import { saveAs } from 'file-saver';
 const api_key = process.env.REACT_APP_API_KEY;
+
 
 const Category = ({name}) => {
 
     const [inputText, setInputText] = useState('');
 
     const handleButtonClick = () => {
-        console.log(`https://api.rainforestapi.com/request?api_key=${api_key}&amazon_domain=amazon.com&asin=${inputText}&type=product`)
         axios.get(`https://api.rainforestapi.com/request?api_key=${api_key}&amazon_domain=amazon.com&asin=${inputText}&type=product`)
             .then(response => {
-                const data = response.data;
-                console.log(data)
-                return axios.post('http://localhost:3001/clothes', data);
+            console.log(response.data)
+            return axios.post('http://localhost:3001/clothes', response.data);
                 
         }).catch (error => {
             console.log(error)
         })
       }
-
-
 
     const handleNoteChange = (event) => {
         setInputText(event.target.value);
